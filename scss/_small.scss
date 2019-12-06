@@ -107,7 +107,7 @@ div#expectWrapper {
 div.expect div.best {
     text-align: center;
 }
-
+ 
 div.expect div.best ul {
     list-style-type: none;
     padding-left: 0;
@@ -217,16 +217,6 @@ div.lower {
     border-top: 1px solid $textColor;
     padding-top: 25px;
     background: linear-gradient(to top, $backColor 0%,  darken($backColor, 10%) 175%);
-
-    /*div:nth-child(3){
-        grid-row: 1 / span 2;
-        grid-column: 3;
-    }*/
-
-    /*div:nth-child(4){
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }*/
 
 }
 
