@@ -373,22 +373,87 @@ main {
 picture#heroImage img {
   display: block;
   width: 98%;
-  margin: 0 1%; }
+  margin: 0 1% 10px 1%; }
+
+main h1 {
+  margin: 2rem 1% 0 1%;
+  color: #0480b1; }
+
+div#expectWrapper {
+  background-color: #111118; }
+
+div.expect div.formula {
+  text-align: right; }
+
+div.expect div h2 {
+  color: #fdd831; }
+
+div.expect div p#left {
+  font-style: italic;
+  font-size: 0.8rem; }
+
+div.expect div ul {
+  padding-left: 6rem; }
+
+div.expect div h1 {
+  color: #fdd831;
+  font-style: italic; }
+
+div.expect {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 1rem 1% 0 1%;
+  background-color: #111118;
+  color: white; }
+
+div.about img {
+  display: flex;
+  width: 100%; }
+
+div.about p {
+  font-size: 0.8rem;
+  color: #a8a8b2; }
 
 div.about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
-  margin: 1%; }
+  margin: 0 1%;
+  border-top: 1px solid #a8a8b2;
+  padding-top: 20px;
+  background: linear-gradient(to top, #f6f6f6 0%, #dddddd 175%); }
 
-div.story figure img {
-  display: flex;
-  width: 100%;
-  border: 2px solid black; }
+div.lower {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  margin: 1%;
+  border-top: 1px solid #a8a8b2;
+  padding-top: 25px;
+  background: linear-gradient(to top, #f6f6f6 0%, #dddddd 175%); }
+  div.lower div:nth-child(3) {
+    grid-row: 1 / span 2;
+    grid-column: 3; }
+  div.lower div:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 2; }
 
-main h1 {
-  margin-top: 0px;
-  padding: 2% 0 0 2%; }
+div.client {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: white; }
+
+div#footerWrapper {
+  background: linear-gradient(to top, #014064 0%, #0480b1 100%);
+  padding: 5px; }
+
+footer {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  padding-left: 1%; }
 
 .clearfix:after {
   content: "";
@@ -401,6 +466,6 @@ main h1 {
     main div.story figure:nth-child(1) {
       grid-column: 1 / span 3; } }
 @media only screen and (min-width: 900px) {
-  header, nav, main, footer {
+  header, nav, footer, div.middle, div.expect {
     max-width: 60rem;
     margin: auto; } }

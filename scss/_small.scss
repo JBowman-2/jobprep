@@ -85,35 +85,128 @@ main {
 picture#heroImage img {
     display: block;
     width: 98%;
-    margin: 0 $side;
-
-   
+    margin: 0 $side 10px $side;  
 }
 
+
+main h1 {
+    margin: 2rem $side 0 $side;
+    color: $primaryColor;
+    
+}
+
+div#expectWrapper {
+    background-color: $banColor;
+}
+
+div.expect div.formula {
+    text-align: right;
+}
+
+div.expect div h2 {
+    color: $subColor;
+}
+
+div.expect div p#left {
+    font-style: italic;
+    font-size: $textSize;
+}
+
+div.expect div ul {
+    padding-left: 6rem;
+}
+
+div.expect div h1 {
+    color: $subColor;
+    font-style: italic;
+}
+
+
+div.expect {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 1rem $side 0 $side;
+    background-color: $banColor;
+    color: white;
+    
+
+}
+
+
+
+
+
+div.about img {
+    display: flex;
+    width: 100%;
+}
+
+div.about p {
+    font-size: $textSize;
+    color: $textColor;
+}
 
 div.about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
+    margin: 0 $side;
+    border-top: 1px solid $textColor;
+    padding-top: 20px;
+    background: linear-gradient(to top, $backColor 0%,  darken($backColor, 10%) 175%);
+}
+
+
+
+
+
+div.lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
     margin: $side;
+    border-top: 1px solid $textColor;
+    padding-top: 25px;
+    background: linear-gradient(to top, $backColor 0%,  darken($backColor, 10%) 175%);
+
+    div:nth-child(3){
+        grid-row: 1 / span 2;
+        grid-column: 3;
+    }
+
+    div:nth-child(4){
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+}
+
+
+div.client {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: white;
 }
 
 
 
 
-div.story figure img {
-    display: flex;
-    width: 100%;
-    border: 2px solid black;
+
+
+div#footerWrapper {
+    background: linear-gradient(to top, $gradBottom 0%, $gradTop 100%);
+    padding: 5px;
+    
 }
 
-
-main h1 {
-    margin-top: 0px;
-    padding: $gutter 0 0 $gutter;
+footer {
+    font-size: 1rem;
+    font-weight: $heavyWeight;
+    color: white;
+    padding-left: $side;
 }
-
-
 
 
   
