@@ -35,7 +35,9 @@
     <main>
         <div class="middle">
         <picture id="heroImage">
-            <img src="images/hero.jpg" alt="hero">
+                <source media="(max-width: 520px)" srcset="images/heroS.jpg">
+                <source media="(max-width: 650px)" srcset="images/heroM.jpg">
+                <img src="images/hero.jpg" alt="hero">
         </picture>
         </div>
 
