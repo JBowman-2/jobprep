@@ -92,6 +92,7 @@ picture#heroImage img {
 main h1 {
     margin: 2rem $side 0 $side;
     color: $primaryColor;
+    font-weight: $regularWeight;
     
 }
 
@@ -103,13 +104,23 @@ div.expect div.formula {
     text-align: right;
 }
 
+div.expect div.formula p {
+    margin: 0 0 4px $side;
+}
+
+div.expect div.formula h1 {
+    margin: 15px 0 2.5rem $side;
+}
+
 div.expect div h2 {
     color: $subColor;
+    margin-bottom: 10px;
 }
 
 div.expect div p#left {
     font-style: italic;
     font-size: $textSize;
+    margin: 0;
 }
 
 div.expect div ul {
@@ -141,9 +152,17 @@ div.about img {
     width: 100%;
 }
 
+div.about h2 {
+    color: $primaryColor;
+    font-weight: $regularWeight;
+    margin: .8rem 0 0 0;
+}
+
 div.about p {
     font-size: $textSize;
     color: $textColor;
+    margin-top: .2rem;
+    
 }
 
 div.about {
@@ -157,7 +176,24 @@ div.about {
 }
 
 
+div.lower img {
+    display: flex;
+    width: 100%;
+}
 
+
+div.lower h2 {
+    color: $primaryColor;
+    font-weight: $regularWeight;
+    margin: .8rem 0 0 0;
+}
+
+div.lower p {
+    font-size: $textSize;
+    color: $textColor;
+    margin-top: .2rem;
+    
+}
 
 
 div.lower {
@@ -166,6 +202,7 @@ div.lower {
     grid-template-rows: auto;
     column-gap: 20px;
     margin: $side;
+    margin-bottom: 1rem;
     border-top: 1px solid $textColor;
     padding-top: 25px;
     background: linear-gradient(to top, $backColor 0%,  darken($backColor, 10%) 175%);
@@ -180,6 +217,13 @@ div.lower {
         grid-row: 2;
     }
 
+}
+
+
+
+div.client img {
+    display: flex;
+    width: 100%;
 }
 
 
